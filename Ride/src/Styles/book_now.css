@@ -1,0 +1,48 @@
+/* .booking
+{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+} */
+.avail_bs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.buscard img{
+ width: 200px;
+ height: 100px;
+}
+.avail_bsContainer{
+ padding: 20px;
+ margin-left: 150px;
+ gap: 20px;
+ 
+}
+.buscard{
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 20px;
+}
+.buscard button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(159, 181, 238);
+    color:white;
+}
+.wlcome_booking {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+.wlcome_booking h2{
+    margin-bottom: 20px;  
+}

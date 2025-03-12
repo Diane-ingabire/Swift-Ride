@@ -1,0 +1,104 @@
+.hello-container {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/download.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; 
+    position: relative;
+    text-align: center;
+}
+.hello-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: white;
+    margin-left:300px;
+}
+.content-wrapper h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.content-wrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-left: 180px;
+}
+.book-now-btn {
+    background-color: rgb(174, 172, 172);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.track-bus-btn {
+    background-color:#669dcd;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.text{
+        animation: bounce 1s infinite ease-in-out;             
+}
+.text p{
+    font-size: 20px;
+}
+.about_card{
+   border-radius: 20px;
+   width: 300px;
+   height: 100px;
+   padding: 50px;
+   text-align: center;
+   background-color:white;
+   box-shadow: 10px 10px 10px 10px #669dcd;  
+}
+.about-cards{
+   display: grid;
+   gap: 30px;
+   grid-template-columns: repeat(3,1fr);  
+}
+.about h3{
+    font-size: x-large;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.about{
+   
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.track-bus-btn Link{
+    text-decoration: none;
+}
