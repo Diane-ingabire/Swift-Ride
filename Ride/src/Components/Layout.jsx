@@ -8,7 +8,7 @@ function Layout() {
         <div>
             <Navbar />
             <Outlet />
-            <Footer />  {/* This will render the Footer */}
+            <Footer /> 
         </div>
     );
 }

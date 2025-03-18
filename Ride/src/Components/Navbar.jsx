@@ -9,6 +9,7 @@ const Navbar = () => {
   const handleLoginForm = () => {
     setModel(!model);
   };
+  
 
   return (
     <nav className="nav-container">
@@ -24,7 +25,7 @@ const Navbar = () => {
         <li><Link to="/Book_Now">Book Now</Link></li>
         <li><Link to="/BusTracker">Features</Link></li>
         <li><Link to="/About">About Us</Link></li>
-        <li><Link to="/">FQAs</Link></li>
+        <li><Link to="/SignUpForm">FQAs</Link></li>
       </ul>
 
       <div className="button-nav">

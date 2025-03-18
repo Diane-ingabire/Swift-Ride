@@ -8,6 +8,7 @@ import DashboardOverview from './Dashboard/DashboardOverview';
 import About  from './Components/About';
 import Payment from './Components/Payment';
 import { useState, useEffect } from 'react';
+import SignUpForm from './Components/SignUpForm';
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -39,6 +40,7 @@ function App() {
                     <Route path="/BusTracker"element={<BusTracker/>} />
                     <Route path="/About"element={<About/>} />
                     <Route path="/Payment"element={<Payment/>} />
+                    <Route path="/SignUpForm"element={<SignUpForm/>} />
                 </Route>
                 <Route path="dashboard" element={<DashboardLayout isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}>
                     <Route index element={<DashboardOverview isDarkMode={isDarkMode} />} />

@@ -8,12 +8,18 @@ import { TbBus } from "react-icons/tb";
 import "../Styles/login.css";
 import { Link } from "react-router-dom";
 
+
+
+
 const LoginForm = ({ onClose }) => {
   const navigate = useNavigate(); 
 
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+
+  
 
   const handleLogin = () => {
     if (email.trim() && password.trim()) {
@@ -32,6 +38,7 @@ const LoginForm = ({ onClose }) => {
     console.log("Login attempted with:", email, password);
     handleLogin();
   };
+  
 
   return (
     <div className="login-container">
@@ -89,7 +96,7 @@ const LoginForm = ({ onClose }) => {
           </div>
 
           <div className="forgot-password">
-            <a href="#">Forgot password?</a>
+            <Link to="#">Forgot password?</Link>
           </div>
 
           <button type="submit" className="login-butn">
