@@ -3,11 +3,11 @@ import { Outlet } from 'react-router-dom';
 import DashboardSidebar from "./DashboardSidebar"; 
 import DashboardNavbar from "./DashboardNavbar"; 
 
-const DashboardLayout = ({ isDarkMode, toggleTheme }) => {
+const DashboardLayout = () => {
   return (
-    <div className={`dashboard-layout ${isDarkMode ? 'dark' : 'light'}`}>
-      <DashboardSidebar isDarkMode={isDarkMode} />
-      <DashboardNavbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />  
+    <div>
+      <DashboardSidebar/>
+      <DashboardNavbar />  
       <Outlet />  
     </div>
   );

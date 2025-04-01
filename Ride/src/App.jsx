@@ -7,34 +7,18 @@ import DashboardLayout from './Dashboard/DashboardLayout';
 import DashboardOverview from './Dashboard/DashboardOverview'; 
 import About  from './Components/About';
 import Payment from './Components/Payment';
-import { useState, useEffect } from 'react';
+
 import SignUpForm from './Components/SignUpForm';
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
 
-    // Toggle the theme
-    const toggleTheme = () => {
-        setIsDarkMode(prevMode => !prevMode);
-    };
-
-    // Load theme from localStorage
-    useEffect(() => {
-        const savedMode = localStorage.getItem("theme");
-        if (savedMode) {
-            setIsDarkMode(savedMode === "dark");
-        }
-    }, []);
-
-    // Save theme to localStorage
-    useEffect(() => {
-        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    }, [isDarkMode]);
+ 
+  
 
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}>
+                <Route path="/" element={<Layout  />}>
                     <Route index element={<Hello />} />
                     <Route path="/Book_Now"element={<Book_Now/>} />
                     <Route path="/BusTracker"element={<BusTracker/>} />
@@ -42,8 +26,8 @@ function App() {
                     <Route path="/Payment"element={<Payment/>} />
                     <Route path="/SignUpForm"element={<SignUpForm/>} />
                 </Route>
-                <Route path="dashboard" element={<DashboardLayout isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}>
-                    <Route index element={<DashboardOverview isDarkMode={isDarkMode} />} />
+                <Route path="dashboard" element={<DashboardLayout  />}>
+                    <Route index element={<DashboardOverview />} />
                 </Route>
             </Routes>
         </BrowserRouter>

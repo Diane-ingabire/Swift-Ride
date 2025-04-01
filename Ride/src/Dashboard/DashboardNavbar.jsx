@@ -2,9 +2,9 @@ import React from "react";
 import "./dashboardstyles/DashboardNavbar.css"
 import { CiLocationOn } from "react-icons/ci";
 import { IoNotifications } from "react-icons/io5";
-const DashboardNavbar =({ isDarkMode, toggleTheme }) =>{
+const DashboardNavbar =() =>{
     return(
-        <nav className={`dashboard-navbar ${isDarkMode ? 'dark' : 'light'}`}>
+        <nav >
         <div className="dashboardnav" >
             <div className="left_dashboard_nav">
                   <div className="log_dash_nav">
@@ -20,7 +20,7 @@ const DashboardNavbar =({ isDarkMode, toggleTheme }) =>{
             <div className="right_dashboard_nav">
                 <div className="change_mode">
                     
-                    <span onClick={toggleTheme}>{isDarkMode ? ' Light Mode' : ' Dark Mode'}</span>
+                    <span ></span>
                 </div>
                 <div className="icon_dash_nav"> <IoNotifications/></div>
                 <div className="profile_nav">G</div>
